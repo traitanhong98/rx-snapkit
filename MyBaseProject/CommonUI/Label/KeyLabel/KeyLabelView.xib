@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyLabelView" customModule="Pmobile3" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="OSi-IA-7I1" id="UHH-6J-nVq"/>
+                <outlet property="valueLabel" destination="djD-B9-xj2" id="Nm2-Rv-l7v"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="603" height="119"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSi-IA-7I1">
+                    <rect key="frame" x="16" y="0.0" width="27.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djD-B9-xj2">
+                    <rect key="frame" x="272.5" y="0.0" width="301.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="djD-B9-xj2" secondAttribute="bottom" id="0Xn-JF-QDA"/>
+                <constraint firstItem="OSi-IA-7I1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="DVN-P2-FoD"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="OSi-IA-7I1" secondAttribute="bottom" id="LQr-kU-4LZ"/>
+                <constraint firstAttribute="trailing" secondItem="djD-B9-xj2" secondAttribute="trailing" constant="29" id="Plo-nc-22C"/>
+                <constraint firstItem="djD-B9-xj2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ejn-fo-0Pm"/>
+                <constraint firstItem="OSi-IA-7I1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mnA-0N-riU"/>
+                <constraint firstItem="djD-B9-xj2" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="tgq-1g-x45"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="268.84057971014494" y="-148.32589285714286"/>
+        </view>
+    </objects>
+</document>
