@@ -9,6 +9,7 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
+    var rootCoordinator: Coordinator?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -18,11 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //Going to tardisRootview
         if let windowScene = scene as? UIWindowScene {
             self.window = UIWindow(windowScene: windowScene)
-            let navi = UINavigationController(
-                rootViewController: LoginViewController()
-            )
-            navi.navigationBar.isHidden = true
-            self.window!.rootViewController = navi
+            let rootNavViewController = UINavigationController()
+            rootCoordinator = LoginCoordinator(navigation: rootNavViewController)
+            rootCoordinator?.start()
+            rootNavViewController.navigationBar.isHidden = true
+            self.window!.rootViewController = rootNavViewController
             self.window!.makeKeyAndVisible()
         }
     }

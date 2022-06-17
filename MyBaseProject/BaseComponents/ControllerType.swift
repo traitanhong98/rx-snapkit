@@ -9,8 +9,5 @@ import Foundation
 
 protocol ControllerType {
     associatedtype ViewModelType
-    
-    func configViewModel(viewModel: ViewModelType)
-    func setupViews()
     func bindViewModel()
 }

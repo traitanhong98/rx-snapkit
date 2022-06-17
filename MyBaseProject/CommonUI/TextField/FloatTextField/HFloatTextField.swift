@@ -105,7 +105,7 @@ class HFloatTextField: UIView {
             placeHolderLabel
                 .snp
                 .updateConstraints { make in
-                    make.top.equalTo(-30)
+                    make.top.equalTo(-15)
             }
         } else {
             placeHolderLabel.font = .systemFont(ofSize: 16, weight: .medium)

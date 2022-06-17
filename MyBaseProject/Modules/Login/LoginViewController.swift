@@ -8,12 +8,30 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    var viewModel: LoginViewModel!
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    init(viewModel: ViewModelType) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
     override func loadView() {
         view = LoginView()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+}
+// MARK: - ControllerType
+extension LoginViewController: ControllerType {
+    typealias ViewModelType = LoginViewModel
+    
+    func bindViewModel() {
+        
     }
 }
