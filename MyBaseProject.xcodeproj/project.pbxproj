@@ -77,6 +77,8 @@
 		2A78E9642859E191009D31B0 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A78E9632859E191009D31B0 /* LoginCoordinator.swift */; };
 		2A78E9672859EAAC009D31B0 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 2A78E9662859EAAC009D31B0 /* RxCocoa */; };
 		2A78E9692859EAAC009D31B0 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A78E9682859EAAC009D31B0 /* RxSwift */; };
+		2A78E973285C831A009D31B0 /* AuthenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A78E972285C8319009D31B0 /* AuthenService.swift */; };
+		2A78E976285C8357009D31B0 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A78E975285C8357009D31B0 /* LoginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +169,8 @@
 		2A78E9542859D930009D31B0 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		2A78E9552859D930009D31B0 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		2A78E9632859E191009D31B0 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		2A78E972285C8319009D31B0 /* AuthenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenService.swift; sourceTree = "<group>"; };
+		2A78E975285C8357009D31B0 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +295,8 @@
 		2A78E8BC2859C9AF009D31B0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				2A78E974285C834B009D31B0 /* Model */,
+				2A78E971285C830E009D31B0 /* Service */,
 				2A78E91E2859CCEC009D31B0 /* Models */,
 				2A78E8BD2859C9E5009D31B0 /* AsynchronousOperation.swift */,
 				2A78E8BF2859C9ED009D31B0 /* ClientNetwork.swift */,
@@ -506,6 +512,22 @@
 			path = GradientViews;
 			sourceTree = "<group>";
 		};
+		2A78E971285C830E009D31B0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2A78E972285C8319009D31B0 /* AuthenService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2A78E974285C834B009D31B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A78E975285C8357009D31B0 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -683,6 +705,7 @@
 				2A78E9462859D2A1009D31B0 /* UITextField+Extension.swift in Sources */,
 				2A78E92F2859CDD6009D31B0 /* ViewModelType.swift in Sources */,
 				2A78E8E02859CAE7009D31B0 /* String+Extensions.swift in Sources */,
+				2A78E976285C8357009D31B0 /* LoginModel.swift in Sources */,
 				2A78E94D2859D892009D31B0 /* Enums.swift in Sources */,
 				2A78E8E42859CAE7009D31B0 /* MutableAttributedString+Extensions.swift in Sources */,
 				2A78E88B2859C97F009D31B0 /* AppDelegate.swift in Sources */,
@@ -693,6 +716,7 @@
 				2A78E8EC2859CAE7009D31B0 /* UIView+Extension.swift in Sources */,
 				2A78E8ED2859CAE7009D31B0 /* UIButton+Extensions.swift in Sources */,
 				2A78E8EB2859CAE7009D31B0 /* Double+Extensions.swift in Sources */,
+				2A78E973285C831A009D31B0 /* AuthenService.swift in Sources */,
 				2A78E91D2859CC66009D31B0 /* KeySegmentView.swift in Sources */,
 				2A78E8C02859C9ED009D31B0 /* ClientNetwork.swift in Sources */,
 				2A78E8EF2859CAE7009D31B0 /* Dict+Extension.swift in Sources */,

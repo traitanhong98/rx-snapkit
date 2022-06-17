@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import SwiftUI
+
+enum NetworkError: Error {
+    case fail(_ message: String)
+    case sessionExpire
+}
